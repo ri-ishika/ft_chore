@@ -1,6 +1,7 @@
 def ft_harvest_total() -> None:
-    total = 0
-    for i in range(3):
-        harvest = int(input(f'Day {i + 1} harvest: '))
-        total += harvest
+    harvest: list[int] = []
+    harvest.append(int(input(f'Day 1 harvest: ')))
+    harvest.append(int(input(f'Day 2 harvest: ')))
+    harvest.append(int(input(f'Day 3 harvest: ')))
+    total: int = harvest[0] + harvest[1] + harvest[2]
     print(f'Total harvest: {total}')
